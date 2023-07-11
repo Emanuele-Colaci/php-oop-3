@@ -13,7 +13,6 @@
             $this->destinatari = $destinatari;
             $this->titolo = $titolo;
             $this->messaggio = $messaggio;
-            $this->suonoAvviso = $suonoAvviso;
             $this->coloreLed = $coloreLed;
         }
 
