@@ -16,6 +16,7 @@
             $this->suonoAvviso = $suonoAvviso;
             $this->coloreLed = $coloreLed;
         }
+
     }
 
 ?>

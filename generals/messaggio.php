@@ -1,7 +1,7 @@
 <?php 
 
     class Messaggio extends Comunicazione {
-        public $notificheLettura;
+        public $notificheLettura = false;
         public $risposta;
         
         public function __construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso, $coloreLed, $notificheLettura, $risposta) {
@@ -9,6 +9,8 @@
             $this->notificheLettura = $notificheLettura;
             $this->risposta = $risposta;
         }
+        
+        
     }
 
 ?>
