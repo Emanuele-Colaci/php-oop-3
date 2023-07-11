@@ -6,14 +6,14 @@
         public $titolo;
         public $messaggio;
         public $suonoAvviso;
-        public $coloreLed;
+        public static $coloreLed = 'blue';
       
-        public function __construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso, $coloreLed) {
+        public function __construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso) {
             $this->mittente = $mittente;
             $this->destinatari = $destinatari;
             $this->titolo = $titolo;
             $this->messaggio = $messaggio;
-            $this->coloreLed = $coloreLed;
+            $this->suonoAvviso = $suonoAvviso;
         }
 
     }

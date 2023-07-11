@@ -6,9 +6,9 @@
     include './generals/notifiche_push.php';
     
     $comunicazioni = [
-        new Email('mittente@dominio.com', 'destinatario@dominio.com', 'Mando email', 'Messaggio email', 'Driiin', 'verde','file.pdf','o','u','a'),
-        new Messaggio('mittente@dominio.com', 'destinatario@dominio.com', 'Rispondo email', 'Messaggio email', 'Driiin', 'verde','Messaggio letto','Risposta messaggio'),
-        new Notifiche('mittente@dominio.com', 'destinatario@dominio.com', 'Icona', 'Messaggio email', 'Driiin', 'verde','"fa-solid fa-face-smile"'),
+        new Email('mittente@dominio.com', 'destinatario@dominio.com', 'Mando email', 'Messaggio email', 'Driiin','file.pdf','o','u','a'),
+        new Messaggio('mittente@dominio.com', 'destinatario@dominio.com', 'Rispondo email', 'Messaggio email', 'Driiin','Messaggio letto','Risposta messaggio'),
+        new Notifiche('mittente@dominio.com', 'destinatario@dominio.com', 'Icona', 'Messaggio email', 'Driiin','"fa-solid fa-face-smile"'),
     ];
 
 ?>
@@ -38,7 +38,8 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">Mittente: <?php echo $comunicazione->mittente; ?></li>
                                     <li class="list-group-item">Destinatari: <?php echo $comunicazione->destinatari; ?></li>
-                                    <li class="list-group-item">Suono avviso: <?php echo $comunicazione->suonoAvviso ?> Driiin </li>
+                                    <li class="list-group-item">Suono avviso: <?php echo $comunicazione->suonoAvviso ?></li>
+                                    <li class="list-group-item">Colore led: <?php echo Comunicazione::$coloreLed ?></li>
                                     <?php if($comunicazione instanceof Email) { ?>
                                         <li class="list-group-item">Allegati: <?php echo $comunicazione->allegati; ?></li>
                                         <li class="list-group-item">Notifica di consegna: <?php echo $comunicazione->notificheConsegna ? 'sì' : 'no'; ?></li>

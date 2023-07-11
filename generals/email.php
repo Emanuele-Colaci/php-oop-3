@@ -6,8 +6,8 @@
         public $inoltra = false;      
         public $stampate = false;
         
-        public function __construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso, $coloreLed, $allegati, $notificheConsegna, $inoltra, $stampate) {
-            parent::__construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso, $coloreLed);
+        public function __construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso, $allegati, $notificheConsegna, $inoltra, $stampate) {
+            parent::__construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso);
             $this->notificheConsegna = $notificheConsegna;
             $this->allegati = $allegati;
             $this->inoltra = $inoltra;

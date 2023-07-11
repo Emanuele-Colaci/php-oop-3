@@ -4,8 +4,8 @@
         public $notificheLettura = false;
         public $risposta;
         
-        public function __construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso, $coloreLed, $notificheLettura, $risposta) {
-            parent::__construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso, $coloreLed);
+        public function __construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso, $notificheLettura, $risposta) {
+            parent::__construct($mittente, $destinatari, $titolo, $messaggio, $suonoAvviso);
             $this->notificheLettura = $notificheLettura;
             $this->risposta = $risposta;
         }
