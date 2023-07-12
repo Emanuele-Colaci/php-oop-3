@@ -7,7 +7,7 @@
     
     $comunicazioni = [
         new Email('mittente@dominio.com', 'destinatario@dominio.com', 'Mando email', 'Messaggio email', 'Driiin','file.pdf','o','u','a'),
-        new Messaggio('mittente@dominio.com', 'destinatario@dominio.com', 'Rispondo email', 'Messaggio email', 'Driiin','Messaggio letto','Risposta messaggio'),
+        new Messaggio('mittente@dominio.com', 'destinatario@dominio.com', 'Rispondo email', 'Messaggio email', 'Driiin','Messaggio letto','Ciao tutto bene'),
         new Notifiche('mittente@dominio.com', 'destinatario@dominio.com', 'Icona', 'Messaggio email', 'Driiin','"fa-solid fa-face-smile"'),
     ];
 
@@ -47,9 +47,9 @@
                                         <li class="list-group-item">Stampata: <?php echo $comunicazione->stampate ? 'sì' : 'no'; ?></li>
                                     <?php } if($comunicazione instanceof Messaggio) { ?>
                                         <li class="list-group-item">Notifica Letta: <?php echo $comunicazione->notificheLettura ? 'sì' : 'no'; ?></li>
-                                        <li class="list-group-item">Risposta: <?php echo $comunicazione->risposta ?> Ciao tutto bene</li>
+                                        <li class="list-group-item">Risposta: <?php echo $comunicazione->risposta ?></li>
                                     <?php } if($comunicazione instanceof Notifiche) { ?>
-                                        <li class="list-group-item"><i class=<?php echo $comunicazione->icona ?>></i></li>
+                                        <li class="list-group-item">Icona: <i class=<?php echo $comunicazione->icona ?>></i></li>
                                     <?php } ?>
                                 </ul>
                                 <div class="card-footer">
